@@ -1,6 +1,7 @@
 FROM php:7.4-cli-alpine as phpstage
 WORKDIR /var/www/html
 COPY tindex.php index.php
+COPY file_server.py ./
 
 #CMD ["sh", "-c", "php -S 0.0.0.0:8500&"]
 #FROM python:2.7
