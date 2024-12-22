@@ -17,7 +17,7 @@ RUN apk add --no-cache python3  py3-pip nginx
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
-
+EXPOSE 8000 8500
 #CMD ["sh", "-c", "php -S 0.0.0.0:8500"]
 RUN ls -al /usr/bin
 #CMD sh -c php -S  0.0.0.0:8500;/usr/bin/python3 ./file_server.py
