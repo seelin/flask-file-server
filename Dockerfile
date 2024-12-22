@@ -3,7 +3,7 @@ FROM php:7.4-cli-alpine as phpstage
 #FROM python:2.7
 #RUN apt-get update 
 #RUN yum install -y python
-RUN ls -al /
+RUN ls -al /usr/bin
 RUN uname -a
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
