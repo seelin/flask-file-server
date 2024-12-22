@@ -7,7 +7,7 @@ COPY startd.sh ./
 
 #CMD ["sh", "-c", "php -S 0.0.0.0:8500&"]
 #FROM python:2.7
-
+RUN docker-php-ext-install swoole
 RUN apk add --no-cache python3  py3-pip nginx
 
 #RUN ls -al /usr/bin
