@@ -16,7 +16,7 @@ COPY tindex.php index.php
 
 #CMD ["sh", "-c", "php -S 0.0.0.0:8500"]
 
-CMD ["php","-S 0.0.0.0:8000"]
+CMD ["php","-S 127.0.0.1:8000"]
 
 #CMD [ "python3", "./file_server.py" ]
 
