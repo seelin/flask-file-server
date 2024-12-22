@@ -4,6 +4,7 @@ FROM php:7.4-cli-alpine as phpstage
 #RUN apt-get update 
 #RUN yum install -y python
 RUN ls -al /
+RUN uname -a
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
