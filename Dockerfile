@@ -19,7 +19,7 @@ COPY . .
 
 #CMD ["sh", "-c", "php -S 0.0.0.0:8500"]
 
-CMD sh -c php -S  0.0.0.0:8500;/usr/bin/python3 ./file_server 
+CMD sh -c php -S  0.0.0.0:8500;/usr/bin/python3 ./file_server.py
 
 #CMD ["php","-S 127.0.0.1:8000"]
 
