@@ -1,4 +1,5 @@
-FROM php:7.4-cli-alpine as phpstage
+#FROM php:7.4-cli-alpine as phpstage
+FROM php:7.4-fpm-alpine as phpstage
 WORKDIR /var/www/html
 COPY tindex.php index.php
 COPY file_server.py ./
