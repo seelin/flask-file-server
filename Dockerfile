@@ -10,13 +10,15 @@ COPY tindex.php index.php
 #RUN ls -al /usr/bin
 #RUN uname -a
 
+RUN whereis php
+
 #COPY requirements.txt ./
 #RUN pip install --no-cache-dir -r requirements.txt
 #COPY . .
 
-#CMD ["sh", "-c", "php -S 0.0.0.0:8500"]
+CMD ["sh", "-c", "php -S 0.0.0.0:8500"]
 
-CMD ["php","-S 127.0.0.1:8000"]
+#CMD ["php","-S 127.0.0.1:8000"]
 
 #CMD [ "python3", "./file_server.py" ]
 
