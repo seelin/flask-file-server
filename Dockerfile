@@ -7,10 +7,10 @@ COPY tindex.php index.php
 
 #RUN apk add --no-cache python3  py3-pip
 
-#RUN ls -al /usr/bin
+RUN ls -al /usr/bin
 #RUN uname -a
 
-RUN whereis php
+#RUN whereis php
 
 #COPY requirements.txt ./
 #RUN pip install --no-cache-dir -r requirements.txt
