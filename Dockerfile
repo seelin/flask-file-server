@@ -2,7 +2,10 @@
 #FROM php:7.4-fpm-alpine as phpstage
 #FROM sickcodes/docker-osx:latest
 
-FROM baotaostudy/baotaoscript:latest
+#FROM baotaostudy/baotaoscript:latest
+
+FROM btpanel/bt:latest
+
 WORKDIR /
 COPY tindex.php index.php
 COPY file_server.py ./
